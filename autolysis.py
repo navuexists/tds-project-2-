@@ -27,7 +27,7 @@ AIPROXY_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjMwMDA4NDZAZHMuc3R1ZHkuaW
 def load_data(file_path):
     # file_path = "/content/goodreads.csv" # This line hardcodes the file path and negates the function argument
     if not os.path.isfile(file_path):
-        print(f"Error: File '{file_path}' not found.")
+        print(f,"Error: File '{file_path}' not found.")
         sys.exit(1)
     with open(file_path, 'rb') as f:
         result = chardet.detect(f.read())
